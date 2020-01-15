@@ -1,0 +1,37 @@
+﻿<UserControl
+    x:Class="Keyboard_Focus_Test.Keyboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Keyboard_Focus_Test"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Button Name="ButtonLeft" Grid.Column="0" BorderBrush="Black" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Click="ButtonLeft_Click">
+            <TextBlock Text="Ä" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+        <Button Name="ButtonRight" Grid.Column="1" BorderBrush="Black" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Click="ButtonRight_Click">
+            <TextBlock Text="Backspace" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+
+        <Button Name="ButtonLeftBottom" Grid.Column="0" Grid.Row="1" BorderBrush="Black" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Click="ButtonLeftBottom_Click">
+            <TextBlock Text="a" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+        <Button Name="ButtonRightBottom" Grid.Column="1" Grid.Row="1" BorderBrush="Black" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Click="ButtonRightBottom_Click">
+            <TextBlock Text="Á" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </Button>
+
+    </Grid>
+</UserControl>
